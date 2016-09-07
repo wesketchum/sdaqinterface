@@ -108,6 +108,10 @@ class SDAQInterface():
                 return 1
             return 0
 
+        if(self.user_input == 'status'):
+            self.get_status()
+            return 0
+
         #if(self.user_input == 'reset'):
          #   self.terminate()
           #  return 1
